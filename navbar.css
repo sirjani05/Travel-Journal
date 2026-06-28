@@ -31,16 +31,20 @@ body{
 }
 
 .logo img{
-    width:45px;
-    height:45px;
+    width:50px;
+    height: 50px;
     border-radius:50%;
+    object-fit:cover;
 }
 
 .nav-head{
     font-size:28px;
     color:#2d5a27;
     font-weight:bold;
+    margin: 5px 0;             
+    line-height: 1;        
 }
+
 
 /* navigation Links */
 .nav-links{
@@ -48,8 +52,19 @@ body{
     align-items:center;
     gap:35px;
     list-style:none;
+    margin: 20px 0;
 }
-
+.links{
+ display:flex;
+ align-items: center;
+ text-decoration:none;
+    color:#333;
+    font-size:17px;
+    font-weight:500;
+    transition:.3s;
+    position:relative;
+    margin: 20px 0;
+}
 .nav-links a{
     text-decoration:none;
     color:#333;
@@ -57,6 +72,7 @@ body{
     font-weight:500;
     transition:.3s;
     position:relative;
+    margin: 20px 0;
 }
 
 /* hover Underline */
@@ -95,7 +111,16 @@ body{
     gap:20px;
     list-style:none;
 }
+.search-input {
+    display: none;
+    padding: 8px;
+    width: 200px;
+    cursor: pointer;
+}
 
+.search-input.active {
+    display: inline-block;
+}
 .search-icon,
 .darkmode-icon{
     cursor:pointer;
@@ -127,4 +152,8 @@ body.dark .nav-links a.active{
 
 body.dark .nav-head{
     color:#8ddf73;
+}
+
+.search-icon{
+    
 }
