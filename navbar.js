@@ -23,3 +23,11 @@ darkBtn.addEventListener("click", ()=>{
     document.body.classList.toggle("dark");
 
 });
+
+const searchBtn = document.getElementById("search-btn");
+const searchInput = document.getElementById("search-input");
+
+searchBtn.addEventListener("click", () => {
+    searchInput.classList.toggle("active");
+    searchInput.focus();
+});
