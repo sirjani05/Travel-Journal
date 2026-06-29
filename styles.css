@@ -4,6 +4,7 @@
   box-sizing: border-box;
   transition: all .3s ease-in-out;
 }
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 :root{
   --primary-color: #2887ff;
   --primary-color-dark: #2476da;
@@ -89,13 +90,9 @@ nav{
   color: var(--white);
 }
 .nav-menu-btn{
-  background: transparent;
-  padding: 10px;
-  border: none;
+  font-size: 1.5rem;
+  color: var(--white);
   cursor: pointer;
-  z-index: 999;
-  display: block;
-  
 }
 .nav-links{
   position: absolute;
@@ -107,16 +104,15 @@ nav{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem !important;
-  backdrop-filter: blur(10px);
+  gap: 2rem;
   background: var(--primary-color);
   transition: transform .5s;
   z-index: -1;
 }
-.nav-links .open{
+.nav-links.open{
   transform: translateY(100%);
 }
-.nav links a{
+.nav-links a{
   font-weight: 600;
   color: var(--white);
   white-space: nowrap;
