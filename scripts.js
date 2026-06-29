@@ -19,53 +19,52 @@ const scrollRevealOption = {
   distance:"50px",
   duration: 1000,
 };
-scrollRevealOption().reveal(".header-image img", {
+
+ScrollReveal().reveal(".header-image img", {
   ...scrollRevealOption,
   origin: "right",
 });
-scrollRevealOption().reveal(".header-content p", {
+ScrollReveal().reveal(".header-content p", {
   ...scrollRevealOption,
   delay: 500,
 });
-scrollRevealOption().reveal(".header-content h1", {
+ScrollReveal().reveal(".header-content h1", {
   ...scrollRevealOption,
   delay: 1000,
 });
-scrollRevealOption().reveal(".header-btns", {
+ScrollReveal().reveal(".header-btns", {
   ...scrollRevealOption,
   delay: 1500,
 });
 
-
-scrollRevealOption().reveal(".destination-card", {
+ScrollReveal().reveal(".destination-card", {
   ...scrollRevealOption,
   interval: 500,
 });
 
-scrollRevealOption().reveal(".showcase-image img", {
+ScrollReveal().reveal(".showcase-image img", {
   ...scrollRevealOption,
   origin: "right",
 });
-scrollRevealOption().reveal(".showcase-content p", {
+ScrollReveal().reveal(".showcase-content p", {
   ...scrollRevealOption,
   delay: 500,
 });
-scrollRevealOption().reveal(".showcase-content h4", {
+ScrollReveal().reveal(".showcase-content h4", {
   ...scrollRevealOption,
   delay: 1000,
 });
-scrollRevealOption().reveal(".showcase-btn", {
+ScrollReveal().reveal(".showcase-btn", {
   ...scrollRevealOption,
   delay: 1500,
 });
 
-scrollRevealOption().reveal(".banner-card", {
+ScrollReveal().reveal(".banner-card", {
   ...scrollRevealOption,
   interval: 500,
 });
 
-
-scrollRevealOption().reveal(".discover-card", {
+ScrollReveal().reveal(".discover-card", {
   ...scrollRevealOption,
   interval: 500,
 });
@@ -74,4 +73,33 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 3,
   spaceBetween: 20,
   loop: true,
+  autoplay: {
+  delay: 5000,
+  disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  effect: "slide",
+  speed: 800,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
 });
