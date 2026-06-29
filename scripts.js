@@ -69,8 +69,9 @@ scrollRevealOption().reveal(".discover-card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
 const swiper = new Swiper(".swiper", {
   slidesPerView: 3,
   spaceBetween: 20,
   loop: true,
-})
+});
