@@ -3,119 +3,367 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Journal</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+  <title>Travel Journal | ZimTour</title>
 </head>
 <body>
-  <nav id="nav-bar">
-    <img src="nav-logo 1.png" alt="Nav-Logo" class="nav-logo">
 
-      <h2 class="nav-head">Travel Journal</h2>
-
-      <ul class="nav-links">
-
-        <a href="" class="links">
-        Home
-        </a>
-
-        <a href="" class="links">
-          Destinations
-        </a>
-
-        <a href="journal.html" class="links">
-          Journal
-        </a>
-
-        <a href="" class="links">
-          Gallery
-        </a>
-
-        <a href="about.html" class="links">
-          About
-        </a>
-
-        <a href="" class="links">
-          Contact
-        </a>
-      </ul>
-      <ul class="nav-icons">
-
-        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1f1f1f"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
-
-        <svg class="darkmode-icon" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
-      </ul>
+<!-- {{navbar section}} -->
+  <nav>
+    <div class="nav-header">
+      <div class="nav-logo">
+        <a href="#" class="logo">ZimTour</a>
+      </div>
+      <button class="nav-menu-btn" id="menu-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#tour">TOUR</a></li>
+      <li><a href="#package">PACKAGE</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#">BOOK TRIP</a></li>
+    </ul>
+    <div class="nav-btns">
+      <button class="btn">BOOK TRIP</button>
+    </div>
   </nav>
-  <section id="hero">
-    <div class="hero">
-      <h1 class="hero-head">
-        Collect Moments,
-        <br>
-        Not Things.
-      </h1>
-      <p class="hero-paragraph">
-        Record your adventures, share your stories
-        <br>
-        and inspire others to explore the world.
-      </p>
-      <div class="hero-btns">
-        <a href="" class="journey-btn">
-          Start Your Journey
-        </a>
-        <a href="" class="explore-btn">
-          Explore Destinations
-        </a>
+
+<!-- {{hero section}} -->
+  <header id="home">
+    <div class="header-container">
+      <div class="header-content">
+        <p>ELEVATE YOUR TRAVEL JOURNEY</p>
+        <h1>Experience The Magic of Flight!</h1>
+        <div class="header-btns">
+          <button class="btn">Book A Trip Now</button>
+          <a href="#"></a>
+          <span><i class="ri-play-circle-fill"></i></span>
+        </div>
+      </div>
+      <div class="header-image">
+        <img src="assets/nav-logo 1.png" alt="header">
       </div>
     </div>
-      <div class="pop-up">
-        <h3 class="popup-head">
-          <strong>
-            Featured Destinations
-          </strong>
-        </h3>
-        <p class="popup-paragraph">
-          Explore amazing places around Zimbabwe
+  </header>
+
+<!-- {{destionations section}} -->
+  <section class="section-container destination-container" id="about">
+    <h2 class="section-header">Popular Destinations</h2>
+    <p class="section-description">
+      Discover the Most Loved Destinations Around Zimbabwe
+    </p>
+    <div class="destination-grid">
+      <div class="destination-card">
+        <img src="assets/Matobo Hills Lodge _ Stay Inside Matobo National Park.jpg" alt="destination">
+        <div class="destination-card-details">
+          <div>
+            <h4>Matopo National Park</h4>
+            <p>Matopo Hills Lodge, Zim</p>
+          </div>
+          <div class="destination-ratings">
+            <span><i class="ri-star-fill"></i></span>
+            4.5
+          </div>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="assets/Skywalking Mutarazi Falls, Nyanga Zimbabwe (5).jpg" alt="destination">
+        <div class="destination-card-details">
+          <div>
+            <h4>Mutarazi Falls</h4>
+            <p>Nyanga, Zim</p>
+          </div>
+          <div class="destination-ratings">
+            <span><i class="ri-star-fill"></i></span>
+            4.1
+          </div>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="assets/When to visit Victoria Falls_.jpg" alt="destination">
+        <div class="destination-card-details">
+          <div>
+            <h4>Wonders of Victoria Falls</h4>
+            <p>Victoria Falls, Zim</p>
+          </div>
+          <div class="destination-ratings">
+            <span><i class="ri-star-fill"></i></span>
+            4.0
+          </div>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="assets/Your next adventure starts here! Don’t wait—discover new places and create lasting memories_ (3).jpg" alt="destination">
+        <div class="destination-card-details">
+          <div>
+            <h4>Victoria Falls Insights</h4>
+            <p>Victoria Falls, Zim</p>
+          </div>
+          <div class="destination-ratings">
+            <span><i class="ri-star-fill"></i></span>
+            4.8
+          </div>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="assets/My trip to forest_Ziplining (1).jpg" alt="destination">
+        <div class="destination-card-details">
+          <div>
+            <h4>Hwange National park</h4>
+            <p>Hwange, Zim</p>
+          </div>
+          <div class="destination-ratings">
+            <span><i class="ri-star-fill"></i></span>
+            5.0
+          </div>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="assets/Majete National park 🏞️.jpg" alt="destination">
+        <div class="destination-card-details">
+          <div>
+            <h4>Majete National Park</h4>
+            <p>Zvishavane, Zim</p>
+          </div>
+          <div class="destination-ratings">
+            <span><i class="ri-star-fill"></i></span>
+            4.8
+          </div>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="assets/714524297178197106.jpg" alt="destination">
+        <div class="destination-card-details">
+          <div>
+            <h4>Lion Cheetah Park</h4>
+            <p>Harare, Zim</p>
+          </div>
+          <div class="destination-ratings">
+            <span><i class="ri-star-fill"></i></span>
+            4.4
+          </div>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="assets/Matobo Hills Lodge _ Stay Inside Matobo National Park.jpg" alt="destination">
+        <div class="destination-card-details">
+          <div>
+            <h4>Traditional and Futurism</h4>
+            <p>Matopo Hills, Zim</p>
+          </div>
+          <div class="destination-ratings">
+            <span><i class="ri-star-fill"></i></span>
+            4.2
+          </div>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="assets/Matobo Hills Lodge _ Stay Inside Matobo National Park.jpg" alt="destination">
+        <div class="destination-card-details">
+          <div>
+            <h4>Traditional and Futurism</h4>
+            <p>Matopo Hills, Zim</p>
+          </div>
+          <div class="destination-ratings">
+            <span><i class="ri-star-fill"></i></span>
+            4.6
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- {{tour section}} -->
+  <section class="section-container journey-container" id="tour">
+    <h2 class="section-header">Journey Across Zimbabwe Made Simple!</h2>
+    <p class="section-description">
+      Effortless Planning for Your Next Adventure
+    </p>
+    <div class="journey-grid">
+      <div class="journey-card">
+        <div class="journey-card-bg">
+          <span><i class="ri-bookmark-3-line"></i></span>
+          <h4>Seamless Booking Process</h4>
+        </div>
+        <div class="journey-card-content">
+          <span><i class="ri-bookmark-3-line"></i></span>
+          <h4>Easy Reservations, One Click Away</h4>
+          <p>
+            From flights and accommodations to activities and
+            transfers, everything you need is available at your
+            fingertips, making travel planning effortless.
+          </p>
+        </div>
+      </div>
+      <div class="journey-card">
+        <div class="journey-card-bg">
+          <span><i class="ri-landscape-line"></i></span>
+          <h4>Tailored Itineraries</h4>
+        </div>
+        <div class="journey-card-content">
+          <span><i class="ri-landscape-line"></i></span>
+          <h4>Customised Plans Just for You</h4>
+          <p>
+            Enjoy personalized travel plans designed to match your
+            preferences and interests. Whether you seek adventure
+            or cultural immersion, our tailored itineraries ensure 
+            your journey is uniquely yours.
+          </p>
+        </div>
+      </div>
+      <div class="journey-card">
+        <div class="journey-card-bg">
+          <span><i class="ri-map-2-line"></i></span>
+          <h4>Expert Local Insights</h4>
+        </div>
+        <div class="journey-card-content">
+          <span><i class="ri-map-2-line"></i></span>
+          <h4>Insider Tips and Recommendations</h4>
+          <p>
+            We provide curated recommendations for dining,
+            sightseeing and hidden germs so you can experience
+            each destination like a local.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- {{package section}} -->
+  <section class="section-container showcase-container" id="package">
+    <div class="showcase-image">
+      <img src="assets/My trip to forest_Ziplining (1).jpg" alt="showcase">
+    </div>
+    <div class="showcase-content">
+      <h4>UNLEASH WANDERLUST WITH ZIMTOUR</h4>
+      <p>
+        Embark on a journey like no other with ZimTour, where
+        your travel dreams come to life. Our mission is to inspire
+        and facilitate your adventures, whether you seek the
+        vibrant energy of bustling cityscapes, the serene beauty
+        of pristine beaches or the captivating history of ancient
+        landmarks. At ZimTour, we provide expertly curated
+        destinations and personalized itineraries, ensuring that 
+        every trip is tailored to your unique preferences.
+        Discover hidden germs, immerse yourself in diverse
+        cultures and create unforgettable memories that will
+        last a lifetime.
+      </p>
+      <p>
+        With ZimTour as your ultimate travel companion,
+        exploring the wonders of Africa has never been
+        easier. Our insider tips and local insights give you the
+        tools to navigate new places with confidence and
+        excitement. From the moment you start planning to the
+        day you return home, we are dedicated to making your
+        travel experience seamless and enriching.
+      </p>
+      <div class="showcase-btn">
+        <button class="btn">
+          Book A Flight Now →
+        </button>
+      </div>
+    </div>
+  </section>
+
+<!-- {{banner section}} -->
+  <section class="section-container banner-container">
+    <div class="banner-card">
+      <h4>10+</h4>
+      <p>Years of Experience</p>
+    </div>
+    <div class="banner-card">
+      <h4>12k</h4>
+      <p>Happy clients</p>
+    </div>
+    <div class="banner-card">
+      <h4>4.8</h4>
+      <p>Overall Ratings</p>
+    </div>
+  </section>
+
+<!-- {{discover section}} -->
+  <section class="section-container discover-container">
+    <h2 class="section-header">Discover Africa From Above</h2>
+    <p class="section-description">
+      Experience Breathtaking Views and Unique Perspectives
+    </p>
+    <div class="discover-grid">
+      <div class="discover-card">
+        <span><i class="ri-camera-lens-line"></i></span>
+        <h4>Aerial Cityscapes</h4>
+        <p>
+          Witness the architectural marvels and bustling streets
+          from bird's eye view, offering a unique perspective.
         </p>
-        <ul class="popup-cards">
-          <li class="card-list">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTCpnmBk_I3D6FGQrSWo31BEOnoKchlymtMrKdOQ3qA&s=10" alt="Nyanga" class="popup-img1">
-            <h3 class="pop-head">
-              Nyanga
-            </h3>
-            <p class="pop-paragraph">
-              Zimbabwe
-            </p>
-          </li>
-          <li class="card-list">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm5TYTVAu3P3jrVRpBfrNdh9khOLE8JClChtRPYLaf3Q&s=10" alt="Victoria_Falls" class="popup-img2">
-            <h3 class="pop-head">
-              Nyanga
-            </h3>
-            <p class="pop-paragraph">
-              Zimbabwe
-            </p>
-          </li>
-          <li class="card-list">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYoFg53oMEWrypZLXMrKeNNl2eQ21NpGRcbw2MX1OJag&s=10" alt="Matopo_Hills" class="popup-img3">
-            <h3 class="pop-head">
-              Nyanga
-            </h3>
-            <p class="pop-paragraph">
-              Zimbabwe
-            </p>
-          </li>
-          <li class="card-list">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBLmOpmT3PB6HpTsHjAAKz16gUaA9pCi93BObCnxN2eA&s=10" alt="Great_Zimbabwe" class="popup-img4">
-            <h3 class="pop-head">
-              Nyanga
-            </h3>
-            <p class="pop-paragraph">
-              Zimbabwe
-            </p>
-          </li>
+      </div>
+      <div class="discover-card">
+        <span><i class="ri-ship-line"></i></span>
+        <h4>Coastal Wonders</h4>
+        <p>
+          Fly over pristine coastlines and turquoise waters,
+          revealing the hidden coves and vibrant coral reefs.
+        </p>
+      </div>
+      <div class="discover-card">
+        <span><i class="ri-landscape-line"></i></span>
+        <h4>Historic Landmarks</h4>
+        <p>
+          Observe the grandeur of ancient castles and other
+          significant sites in a way that ground tours can't offer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+<!-- {{testimonial section}} -->
+  <section class="section-container client-container">
+    <h2 class="section-header">Loved By Over Thousand Travelers</h2>
+    <p class="section-description">
+      Discover the stories of wanderlust and cherished
+      memories through the eyes of our valued clients.
+    </p>
+  </section>
+
+<!-- {{contact section}} -->
+  <footer id="contact">
+    <div class="section-container footer-container">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <a href="#" class="logo">ZimTour</a>
+        </div>
+        <p>
+          Explore Africa with ease and excitement through our
+          comprehensive travel platform. Your journey begins headerwhere seamless planning meets unforgettable
+          experiences.
+        </p>
+        <ul class="footer-socials">
+          <li><a href="#">
+            <i class="ri-facebook-line"></i>
+          </a></li>
+          <li><a href="#">
+            <i class="ri-facebook-line"></i>
+          </a></li>
+          <li><a href="#">
+            <i class="ri-facebook-line"></i>
+          </a></li>
+          <li><a href="#">
+            <i class="ri-facebook-line"></i>
+          </a></li>
+          <li><a href="#">
+            <i class="ri-facebook-line"></i>
+          </a></li>
         </ul>
       </div>
-  </section>
-  <script type="text/js" src="scripts.js"></script>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
